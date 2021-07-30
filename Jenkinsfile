@@ -1,5 +1,5 @@
-node('SPC') {
-    Stage('scm') {
+node('MASTER') {
+    stage('scm') {
         git "https://github.com/sandeepvikram/openmrs-core.git"
     }
     stage('build') {
